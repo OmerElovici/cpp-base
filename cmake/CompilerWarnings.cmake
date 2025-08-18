@@ -107,7 +107,7 @@ function(
 
   target_compile_options(
     ${project_name}
-    PRIVATE # C++ warnings
+    INTERFACE # C++ warnings
               $<$<COMPILE_LANGUAGE:CXX>:${PROJECT_WARNINGS_CXX}>
               # C warnings
               $<$<COMPILE_LANGUAGE:C>:${PROJECT_WARNINGS_C}>
