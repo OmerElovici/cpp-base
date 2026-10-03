@@ -1,4 +1,4 @@
-# Docs:
+    # Docs:
 # http://clang.llvm.org/docs/ClangFormatStyleOptions.html
 
 # The style used for all options not specifically set in the configuration.
@@ -34,7 +34,7 @@ AllowAllParametersOfDeclarationOnNextLine: false
 AllowShortBlocksOnASingleLine: false
 
 # If true, short case labels will be contracted to a single line.
-AllowShortCaseLabelsOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: false
 
 # Dependent on the value, int f() { return 0; } can be put on a single line.
 # SFS_None (in configuration: None) Never merge functions into a single line.
@@ -48,7 +48,7 @@ AllowShortFunctionsOnASingleLine: Inline
 # if( condition )  do something;    -> YES
 # if( condition )
 #     do something;                 -> DON'T
-AllowShortIfStatementsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: false
 
 # Dependent on the value, auto lambda []() { return 0; } can be put on a single line.
 AllowShortLambdasOnASingleLine: All
@@ -58,7 +58,7 @@ AllowShortLambdasOnASingleLine: All
 # while( condition )  do something;    -> YES
 # while( condition )
 #     do something;                    -> DON'T
-AllowShortLoopsOnASingleLine: true
+AllowShortLoopsOnASingleLine: false
 
 # The function definition return type breaking style to use. This option is deprecated and is
 # retained for backwards compatibility.

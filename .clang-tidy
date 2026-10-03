@@ -14,10 +14,12 @@ Checks: "*,
   -cppcoreguidelines-non-private-member-variables-in-classes,
   -misc-non-private-member-variables-in-classes,
   -cppcoreguidelines-pro-type-reinterpret-cast,
-  -misc-use-anonymous-namespace"
+  -misc-use-anonymous-namespace,
+  -misc-include-cleaner,
+  -portability-avoid-pragma-once"
 
-WarningsAsErrors: ""
-HeaderFilterRegex: ""
+WarningsAsErrors: ''
+HeaderFilterRegex: ''
 FormatStyle: none
 
 CheckOptions:
@@ -25,13 +27,13 @@ CheckOptions:
   - key: readability-identifier-naming.ClassCase
     value: CamelCase
   - key: readability-identifier-naming.ClassConstantCase
-    value: CamelCase
+    value: aNy_CasE
   - key: readability-identifier-naming.ConstantMemberCase
-    value: CamelCase
+    value: aNy_CasE
   - key: readability-identifier-naming.ConstexprVariableCase
-    value: CamelCase
+    value: aNy_CasE
   - key: readability-identifier-naming.GlobalConstantCase
-    value: CamelCase
+    value: aNy_CasE
   - key: readability-identifier-naming.NamespaceCase
     value: CamelCase
   - key: readability-identifier-naming.StructCase
@@ -47,9 +49,9 @@ CheckOptions:
   - key: readability-identifier-naming.EnumCase
     value: CamelCase
   - key: readability-identifier-naming.EnumConstantCase
-    value: CamelCase
+    value: aNy_CasE
   - key: readability-identifier-naming.ScopedEnumConstantCase
-    value: CamelCase
+    value: aNy_CasE
 
   # lower_case names.
   - key: readability-identifier-naming.ClassMemberCase

@@ -1,3 +1,30 @@
+# Clangd configuration file
+# Documentation: https://clangd.llvm.org/config
+
 CompileFlags:
-  CompilationDatabase: build
-  
+  # compile_commands.json path
+  CompilationDatabase: .
+
+  # Additional compiler flags appended to every compile command
+  Add:
+    - -Wall
+    - -Wextra
+
+Diagnostics:
+  # Unused include detection 
+  UnusedIncludes: Strict
+
+  # Read checks and options from .clang-tidy (Strict -> Loose ->  None)
+  ClangTidy:
+    FastCheckFilter: Loose
+
+# Inlay hints configuration for modern editor support
+InlayHints:
+  Enabled: Yes
+  ParameterNames: Yes
+  DeducedTypes: Yes
+  Designators: Yes
+
+# Background indexing enables cross-file navigation across the entire codebase
+Index:
+  Background: Build
