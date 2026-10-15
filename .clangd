@@ -5,11 +5,6 @@ CompileFlags:
   # compile_commands.json path
   CompilationDatabase: .
 
-  # Additional compiler flags appended to every compile command
-  Add:
-    - -Wall
-    - -Wextra
-
 Diagnostics:
   # Unused include detection 
   UnusedIncludes: Strict
